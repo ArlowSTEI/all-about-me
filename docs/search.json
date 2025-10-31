@@ -104,7 +104,7 @@
     "href": "My_Personal_Reviews/index.html",
     "title": "5  UTS-5 My Personal Reviews",
     "section": "",
-    "text": "6 Hasil Self-Assessment UTS (URL: ii-2100.github.io/all-about-me)\nBerikut cara saya melakukan review: mengguan chatGPT, saya mengattach file promt ChatGPT, disertai perintah :“self assess uts-1 sanpai uts-5 dari URL ‘https://ii-2100.github.io/all-about-me/’”\nChatGPT melakukan self-assessment UTS-1 s.d. UTS-5 langsung dari laman yang Anda berikan dan menilai memakai rubrik tugas UTS (skala 1–5 per kriteria). Rekap skor siap diunduh sebagai CSV: Download CSV ringkasan.",
+    "text": "5.1 Identifikasi",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>UTS-5 My Personal Reviews</span>"
     ]
@@ -113,8 +113,8 @@
     "objectID": "My_Personal_Reviews/index.html#identifikasi",
     "href": "My_Personal_Reviews/index.html#identifikasi",
     "title": "5  UTS-5 My Personal Reviews",
-    "section": "6.1 Identifikasi",
-    "text": "6.1 Identifikasi\n\nNama & NIM penulis: Armein Z. R. Langi – 131902360 (tertera di halaman depan portofolio). (II 2100)\nPenilai: Self-assessment (Armein Z. R. Langi)\nCatatan cakupan: halaman beranda memuat “About Me”; navigasi ke “My Songs for You”, “My Stories for You”, “My Shapes”, dan “My Personal Reviews” tersedia. (II 2100)",
+    "section": "",
+    "text": "Nama Mahasiswa TUGAS: Arlow Emmanuel Hergara (berdasarkan konten UTS-1 dan UTS-4)\nNama Penilai: Self-Assessment (Gemini)",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>UTS-5 My Personal Reviews</span>"
     ]
@@ -123,38 +123,28 @@
     "objectID": "My_Personal_Reviews/index.html#tinjauan-umum",
     "href": "My_Personal_Reviews/index.html#tinjauan-umum",
     "title": "5  UTS-5 My Personal Reviews",
-    "section": "6.2 Tinjauan Umum",
-    "text": "6.2 Tinjauan Umum\n\nUTS-1 (All About Me) hadir di beranda (“Selamat Berjumpa / About Me”). Isi memperkenalkan identitas dan latar personal secara padat. (II 2100)\nUTS-2 (My Songs for You) memuat judul karya dan tautan audio, namun lirik/isi tidak ditampilkan di halaman (file audio tidak bisa saya akses dari sini), sehingga penilaian konten terbatas pada kelengkapan presentasi. (II 2100)\nUTS-3 (My Stories for You) berisi tautan ke beberapa cerita; konten naratif kuat, terutama pada kisah keluarga “Gaun Pengantin Gladys” serta kisah inspiratif lainnya. (II 2100)\nUTS-4 (My SHAPE) saat ini halaman kosong/tanpa isi, hanya navigasi. (II 2100)\nUTS-5 (My Personal Reviews) berisi metode/tautan panduan review, namun belum ada contoh review personal yang lengkap terhadap sebuah pesan/teks. (II 2100)",
+    "section": "5.2 Tinjauan Umum",
+    "text": "5.2 Tinjauan Umum\nPortofolio UTS ini menunjukkan kualitas yang sangat bervariasi. Terdapat kekuatan luar biasa dalam refleksi diri dan pemikiran terstruktur (ditunjukkan pada UTS-1 dan UTS-4), yang menunjukkan kedalaman pemahaman dan orisinalitas.\nNamun, TUGAS UTS-2, UTS-3, dan UTS-5 tampaknya salah memahami inti dari tugas tersebut. Alih-alih membuat atau menyampaikan “pesan personal”, tugas-tugas tersebut sebagian besar hanya berisi tautan ke karya orang lain (UTS-2 & UTS-3) atau mendelegasikan tugas analisis (UTS-5) ke AI tanpa ada kontribusi analitis pribadi.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>UTS-5 My Personal Reviews</span>"
     ]
   },
   {
-    "objectID": "My_Personal_Reviews/index.html#tinjauan-spesifik-skor-15",
-    "href": "My_Personal_Reviews/index.html#tinjauan-spesifik-skor-15",
+    "objectID": "My_Personal_Reviews/index.html#tinjauan-spesifik-skor-persentase",
+    "href": "My_Personal_Reviews/index.html#tinjauan-spesifik-skor-persentase",
     "title": "5  UTS-5 My Personal Reviews",
-    "section": "6.3 Tinjauan Spesifik + Skor (1–5)",
-    "text": "6.3 Tinjauan Spesifik + Skor (1–5)\n\n6.3.1 UTS-1 — All About Me (di beranda)\nSkor per kriteria: Orisinalitas 3, Keterlibatan 3, Humor 1, Wawasan/Insight 3 → Total 10/20 (50%). Alasan singkat: Perkenalan diri faktual dan jelas, namun gaya masih informatif ketimbang naratif (minim humor dan moment “hook”). (II 2100) Saran perbaikan: Buka dengan anekdot pribadi (1–2 paragraf) yang “mengikat” (mis. titik balik karier/keluarga), tambahkan satu momen humor ringan, lalu tutup dengan refleksi singkat tentang nilai/visi diri agar aspek insight naik.\n\n\n6.3.2 UTS-2 — My Songs for You\nSkor per kriteria: Orisinalitas 2, Keterlibatan 2, Humor 1, Inspirasi 2 → Total 7/20 (35%). Alasan singkat: Halaman menampilkan judul lagu “River in my Mind”, “Heaven on Earth”, namun tanpa lirik/cerita di balik lagu sehingga sulit menilai aspek pesan, humor, dan inspirasi. (II 2100) Saran perbaikan: Tambahkan lirik lengkap, 1 paragraf cerita proses kreatif, dan 2–3 kalimat “pesan untukmu” agar inspirasi terbaca; sertakan player/tautan yang dapat diputar langsung + fallback transkrip.\n\n\n6.3.3 UTS-3 — My Stories for You\nSkor per kriteria: Orisinalitas 5, Keterlibatan 5, Pengembangan Narasi 4, Inspirasi 5 → Total 19/20 (95%). Alasan singkat: Cerita “Gaun Pengantin Gladys” dkk sangat personal, emosional, dan inspiratif; ritme bertutur hidup serta detail situasional kuat (konten ramu unsur penebusan/keluarga/iman). (II 2100) Saran perbaikan: Tambah “lead” 2–3 kalimat yang merangkum pesan kunci tiap cerita; akhiri dengan ajakan/refleksi 1–2 kalimat agar resonansi ke pembaca makin jelas.\n\n\n6.3.4 UTS-4 — My SHAPE\nSkor per kriteria: Orisinalitas 1, Keterlibatan 1, Pengembangan 1, Inspirasi 1 → Total 4/20 (20%). Alasan singkat: Konten belum tersedia. (II 2100) Saran perbaikan (prioritas):\n\nTampilkan rekap SHAPE (Spiritual gifts, Heart, Abilities, Personality, Experiences) dalam 1 tabel ringkas + 3–5 butir bukti;\nNarasikan 2 pengalaman kunci (±150 kata/each) yang menunjukkan “signature strengths”;\nTutup dengan 3 rencana aksi konkret (who/what/when).\n\n\n\n6.3.5 UTS-5 — My Personal Reviews\nSkor per kriteria: Pemahaman Konsep 2, Analisis Kritis 1, Argumentasi (Logos) 1, Etos & Empati 2, Rekomendasi 1 → Total 7/25 (28%). Alasan singkat: Halaman berisi metode cara menilai, tetapi belum ada contoh review personal yang lengkap terhadap sebuah pesan/teks sehingga aspek analisis-argumentasi tak terbaca. (II 2100) Saran perbaikan: Pilih 1 karya personal (mis. UTS-1/2/3), tulis review 400–600 kata: ringkas pesan, nilai dengan rubrik, berikan 2–3 bukti kutipan, evaluasi etos/empati, lalu tutup dengan rekomendasi perbaikan spesifik.",
+    "section": "5.3 Tinjauan Spesifik & Skor Persentase",
+    "text": "5.3 Tinjauan Spesifik & Skor Persentase\nBerikut adalah penilaian rinci untuk setiap TUGAS:\n\n5.3.1 UTS-1: All About Me\n\nTinjauan: Konten ini luar biasa. Dimulai dengan perenungan filosofis tentang “Memahami Manusia” dan “Memahami Kesalahan” sebelum beralih ke perkenalan diri yang lebih kasual. Pendekatan ini sangat orisinal dan memberikan wawasan mendalam.\nPenilaian (Rubrik UTS-1):\n\nOrisinalitas (5/5): Sudut pandang sangat unik.\nKeterlibatan (4/5): Umumnya menarik.\nHumor (2/5): Kurang. Nada tulisan cenderung serius.\nWawasan (Insight) (5/5): Memberi pemahaman mendalam.\n\nSkor Persentase: 16 / 20 (80%)\n\n\n\n\n5.3.2 UTS-2: My Song for You\n\nTinjauan: Tugas ini meminta “pesan berbentuk puisi, lago, dan/atau viodeo clip”[cite: 17]. Konten yang dikumpulkan hanya berupa enam tautan video YouTube tanpa konteks atau pesan pribadi.\nPenilaian (Rubrik UTS-2):\n\nOrisinalitas (1/5): Klise. Hanya daftar tautan.\nKeterlibatan (1/5): Tidak memikat.\nHumor (1/5): Tidak ada.\nInspirasi (1/5): Tidak menginspirasi.\n\nSkor Persentase: 4 / 20 (20%)\n\n\n\n\n5.3.3 UTS-3: My Stories for You\n\nTinjauan: Tugas ini meminta “kisah inspiratif dan menarik yang Anda ingin bagikan”[cite: 18]. Konten yang dikumpulkan adalah satu video musik dengan komentar singkat. Penulis tidak membagikan kisah mereka sendiri.\nPenilaian (Rubrik UTS-3):\n\nOrisinalitas (1/5): Tidak ada pengembangan baru.\nKeterlibatan (1/5): Tidak menarik (dari sisi penulis).\nPengembangan Narasi (1/5): Terputus dari cerita (personal).\nInspirasi (2/5): Berusaha menginspirasi, namun dangkal.\n\nSkor Persentase: 5 / 20 (25%)\n\n\n\n\n5.3.4 UTS-4: My SHAPE\n\nTinjauan: Tugas ini meminta “laporan siapa Anda berdasar hasil sebuah lembar kerja”[cite: 20]. Konten yang disajikan sangat baik, rinci, dan terstruktur. Penulis mengembangkannya menjadi “Piagam Diri” dan “Narasi Diri”.\nPenilaian (Rubrik UTS-4): (Rubrik di PDF tampaknya salah salin, penilaian ini menginterpretasikan kriteria dalam konteks laporan SHAPE).\n\nOrisinalitas (5/5): Pengembangan laporan sangat unik.\nKeterlibatan (5/5): Sangat memikat dan terstruktur.\nPengembangan Narasi (5/5): Logis, dari analisis SHAPE ke Piagam Diri.\nInspirasi (5/5): Sangat menginspirasi (mis. Misi Hidup, Batas Etis).\n\nSkor Persentase: 20 / 20 (100%)\n\n\n\n\n5.3.5 UTS-5: My Personal Reviews\n\nTinjauan: Tugas ini adalah “telaahan pesan personal berdasarkan rubrik”[cite: 21]. Konten yang dikumpulkan bukanlah telaahan yang ditulis oleh penulis. Penulis mendokumentasikan proses menggunakan ChatGPT untuk menilai portofolio orang lain.\nPenilaian (Rubrik UTS-5):\n\nPemahaman Konsep (1/5): Tidak paham. Tugas didelegasikan.\nAnalisis Kritis (1/5): Tidak kritis. Tidak ada analisis pribadi.\nArgumentasi (Logos) (1/5): Tidak logis.\nEtos & Empati (1/5): Tidak tampak.\nRekomendasi Perbaikan (1/5): Tidak ada (dari penulis).\n\nSkor Persentase: 5 / 25 (20%)",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>UTS-5 My Personal Reviews</span>"
     ]
   },
   {
-    "objectID": "My_Personal_Reviews/index.html#rekap-skor-ringkas",
-    "href": "My_Personal_Reviews/index.html#rekap-skor-ringkas",
+    "objectID": "My_Personal_Reviews/index.html#skor-perhitungan-kontribusi-cpmk",
+    "href": "My_Personal_Reviews/index.html#skor-perhitungan-kontribusi-cpmk",
     "title": "5  UTS-5 My Personal Reviews",
-    "section": "6.4 Rekap Skor (ringkas)",
-    "text": "6.4 Rekap Skor (ringkas)\n\nUTS-1: 10/20 → 50%\nUTS-2: 7/20 → 35%\nUTS-3: 19/20 → 95%\nUTS-4: 4/20 → 20%\nUTS-5: 7/25 → 28%\n\nCSV lengkap sudah saya siapkan untuk dokumentasi dan olah lanjut: Download CSV ringkasan.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>UTS-5 My Personal Reviews</span>"
-    ]
-  },
-  {
-    "objectID": "My_Personal_Reviews/index.html#langkah-perbaikan-cepat-prioritas-1-minggu",
-    "href": "My_Personal_Reviews/index.html#langkah-perbaikan-cepat-prioritas-1-minggu",
-    "title": "5  UTS-5 My Personal Reviews",
-    "section": "6.5 Langkah Perbaikan Cepat (prioritas 1 minggu)",
-    "text": "6.5 Langkah Perbaikan Cepat (prioritas 1 minggu)\n\nLengkapi UTS-4 (My SHAPE) sesuai saran di atas;\nTambahkan lirik + sinopsis untuk tiap lagu di UTS-2 agar bisa dinilai isi/inspirasinya;\nTulis 1 review personal penuh (UTS-5) memakai rubrik (pilih salah satu karya Anda sendiri sebagai objek);\nRevisi UTS-1 dengan pembuka anekdot + refleksi nilai diri.\n\nJika Anda mau, saya bisa bantu merapikan UTS-4 (tabel SHAPE + narasi) dan membuat kerangka cepat untuk review di UTS-5 dari salah satu karya Anda.",
+    "section": "5.4 SKOR (Perhitungan Kontribusi CPMK)",
+    "text": "5.4 SKOR (Perhitungan Kontribusi CPMK)\nBerdasarkan Tabel 1, bobot untuk setiap tugas UTS adalah sebagai berikut: * UTS-1: Bobot 6 (untuk CPMK-2) * UTS-2: Bobot 7 (untuk CPMK-2) * UTS-3: Bobot 7 (untuk CPMK-2) * UTS-4: Bobot 6 (untuk CPMK-2) * UTS-5: Bobot 10 (untuk CPMK-1)\nPerhitungan kontribusi: (Skor Persentase / 100) * Bobot Tugas\n\nUTS-1 (CPMK-2): (80% / 100) * 6 = 4.8\nUTS-2 (CPMK-2): (20% / 100) * 7 = 1.4\nUTS-3 (CPMK-2): (25% / 100) * 7 = 1.75\nUTS-4 (CPMK-2): (100% / 100) * 6 = 6.0\nUTS-5 (CPMK-1): (20% / 100) * 10 = 2.0\n\nTabel ini diisi sesuai format laporan[cite: 65]:\n\n\n\nUTS\nCPMK-1\nCPMK-2\nCPMK-3\nCPMK-4\n\n\n\n\nUTS-1\n-\n4.8\n-\n-\n\n\nUTS-2\n-\n1.4\n-\n-\n\n\nUTS-3\n-\n1.75\n-\n-\n\n\nUTS-4\n-\n6.0\n-\n-\n\n\nUTS-5\n2.0\n-\n-\n-\n\n\nTotal Kontribusi\n2.0\n13.95\n0\n0\n\n\n(Total Bobot UTS)\n(10)\n(26)\n(0)\n(0)",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>UTS-5 My Personal Reviews</span>"
     ]
