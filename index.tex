@@ -793,238 +793,289 @@ UTS-5 & 2.0 & - & - & - \\
 
 \chapter{UAS-1 My Concepts}\label{uas-1-my-concepts}
 
-\section{Computational Thinking}\label{computational-thinking}
+Konsep yang ingin saya bawa adalah Learning Model Artificial
+Intelligence (AI). Konsep ini memandang kecerdasan buatan sebagai sistem
+yang tidak hanya menjalankan instruksi tetap, tetapi mampu belajar dari
+pengalaman dan memperbaiki perilakunya seiring waktu.
 
-Konsep yang ingin saya bawa adalah computational thinking.
+Berbeda dengan sistem AI yang sepenuhnya berbasis aturan, Learning Model
+AI memiliki kemampuan untuk mengevaluasi hasil tindakannya sendiri.
+Ketika sebuah tindakan menghasilkan hasil yang kurang optimal, sistem
+dapat menyesuaikan model internalnya agar di masa depan dapat membuat
+keputusan yang lebih baik. Dengan cara ini, kecerdasan tidak berhenti
+pada desain awal, melainkan berkembang melalui proses pembelajaran
+berkelanjutan.
 
-Computational thinking adalah suatu pola pikir yang mampu membantu
-seseorang menyelesaikan suatu masalah dengan cara yang jelas,
-terstruktur, dan konsisten. Sebagai programmer, pola pikir ini menjadi
-hal yang penting karena membantu menghasilkan solusi yang mampu
-diimplementasikan ke dalam bentuk kode yang dapat dijalankan oleh suatu
-komputer.
+Learning Model AI bekerja melalui siklus sederhana namun berulang.
+Sistem menerima informasi dari lingkungan, mengambil tindakan
+berdasarkan pengetahuan yang dimilikinya, lalu menerima umpan balik atas
+tindakan tersebut. Umpan balik ini menjadi dasar bagi sistem untuk
+memperbarui cara kerjanya. Proses inilah yang memungkinkan AI
+beradaptasi terhadap perubahan dan ketidakpastian.
 
-Pola pikir computational thinking terdiri dari 4 fondasi:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \textbf{Decomposition:} Proses memecah suatu masalah menjadi
-  masalah-masalah yang lebih kecil dan lebih mudah untuk diselesaikan.
-\item
-  \textbf{Abstraction:} Proses menghilangkangkan detail-detail tidak
-  penting dalam suatu masalah agar dapat fokus pada inti permasalahan.
-\item
-  \textbf{Pattern Recognition:} Proses menemukan suatu pola dalam
-  permasalahan yang ingin diselesaikan.
-\item
-  \textbf{Algorithmic Thinking:} Proses menentukan suatu algoritma atau
-  langkah-langkah yang diperlukan untuk menyelesaikan masalah.
-\end{enumerate}
+Konsep ini juga mengubah hubungan antara manusia dan mesin. Manusia
+tidak lagi harus menentukan setiap langkah yang harus diambil oleh
+sistem, melainkan menetapkan tujuan, batasan, dan kriteria keberhasilan.
+Mesin diberi ruang untuk mengeksplorasi solusi di dalam kerangka
+tersebut dan belajar dari hasil yang diperoleh.
 
 \bookmarksetup{startatroot}
 
 \chapter{UAS-3 My Opinions}\label{uas-3-my-opinions}
 
-Opini yang saya berikan pada bagian ini adalah opini mengenai penggunaan
-AI dalam pembuatan produk software (terutama dalam kode sumber).
+Model Artificial Intelligence yang populer saat ini, khususnya Large
+Language Models (LLM), sangat bergantung pada pendekatan pembelajaran
+berbasis big data. Kapabilitas utama model-model ini diperoleh melalui
+proses pelatihan awal yang masif, menggunakan kumpulan data dalam skala
+sangat besar, dengan tujuan menangkap pola statistik dari bahasa dan
+pengetahuan manusia. Pendekatan ini terbukti efektif untuk berbagai
+tugas praktis, namun menimbulkan keterbatasan mendasar ketika dikaitkan
+dengan tujuan jangka panjang Artificial General Intelligence (AGI).
 
-Menurut saya, penggunaan AI perlu dilakukan bersama dengan dekomposisi
-program menjadi komponen-komponen yang jelas serta pendefinisian kontrak
-antar komponen yang sudah benar. Terdapat beberapa keuntungan ketika
-menggunakan pendekatan ini ketika menggunakan AI untuk menulis kode.
+Ketergantungan yang tinggi pada big data menunjukkan bahwa pembelajaran
+LLM bersifat front-loaded, yaitu sebagian besar kecerdasan model
+ditentukan pada fase pelatihan awal. Setelah model dirilis dan
+digunakan, kemampuannya pada dasarnya bersifat statis. Model tidak
+benar-benar belajar dari interaksi sehari-hari, tidak membangun
+pemahaman baru secara berkelanjutan, dan tidak melakukan eksperimen
+mandiri terhadap lingkungannya. Dengan demikian, penggunaan model lebih
+menyerupai proses inferensi dari pengetahuan masa lalu, bukan
+pembelajaran aktif yang sedang berlangsung.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \textbf{Struktur kode yang lebih jelas:} Penentuan komponen-komponen
-  perangkat lunak sebelum penulisan kode implementasi adalah hal yang
-  umum dilakukan dalam pembuatan perangkat lunak. Hal ini dikarenakan
-  penentuan struktur di awal membantu tim untuk membagi kerja secara
-  jelas dan tetap menghasilkan komponen-komponen yang mampu berinteraksi
-  dengan tepat. Untuk sekarang, AI masih belum mampu untuk menghasilkan
-  struktur kode yang terbaik untuk suatu perangkat lunak dan lebih baik
-  agar hal tersebut ditentukan sendiri oleh manusia.
-\item
-  \textbf{Mengurangi kesalahan:} Pendefinisian kontrak-kontrak yang
-  jelas antar komponen memungkinkan pembuatan setiap komponen secara
-  terpisah. Hal ini membantu AI sebab mengurangi hal-hal yang perlu
-  dipikirkan oleh AI ketika menghasilkan suatu kode. Hal ini sama juga
-  untuk developer manusia, tetapi orang cenderung lupa akan hal ini.
-\item
-  \textbf{Penggunaan AI lebih efisien:} Pembagian suatu program menjadi
-  komponen-komponen memecahkan permasalahan keseluruhan program menjadi
-  domain-domain yang lebih kecil. Hal ini dilakukan untuk membantu
-  developer untuk fokus memecahkan masalah yang lebih kecil satu demi
-  satu hingga menghasilkan program keseluruhan yang dapat memecahkan
-  masalah yang lebih besar. AI juga mengambil keuntungan dari domain
-  masalah yang lebih kecil sama seperti developer manusia. Ketika domain
-  masalah lebih kecil, informasi yang harus disimpan oleh AI menjadi
-  lebih sedikit. Hal ini berarti bahwa jumlah token yang digunakan oleh
-  AI akan berkurang sehingga penggunaannya menjadi lebih efisien.
-\end{enumerate}
+Kondisi ini berbeda secara fundamental dengan cara kecerdasan umum
+terbentuk pada manusia. Manusia tidak bergantung pada kumpulan data
+raksasa yang dikurasi di awal kehidupan, melainkan belajar melalui
+eksperimen, kegagalan, refleksi, dan adaptasi berkelanjutan.
+Pembelajaran terjadi sepanjang penggunaan kemampuan itu sendiri, bukan
+berhenti setelah fase ``pelatihan''.
+
+Oleh karena itu, dapat dikemukakan bahwa model AI yang hanya
+mengandalkan pembelajaran statistik dari big data bukanlah pendekatan
+yang optimal untuk mencapai AGI. AGI menuntut sistem yang memiliki
+kapasitas untuk membentuk pengetahuan baru secara otonom, menguji
+hipotesisnya sendiri, dan memperbarui representasi internalnya
+berdasarkan pengalaman langsung. Model semacam ini harus mampu belajar
+in situ, seiring dengan penggunaan, bukan hanya sebelum digunakan.
+
+Dengan kata lain, arah menuju AGI memerlukan pergeseran paradigma: dari
+model yang terutama mengonsumsi data historis, menuju model yang mampu
+bereksperimen secara mandiri dan belajar secara terus-menerus. Tanpa
+kemampuan ini, AI akan tetap berada pada level kecerdasan
+sempit---sangat kompeten dalam domain tertentu, tetapi tidak benar-benar
+adaptif atau general.
 
 \bookmarksetup{startatroot}
 
 \chapter{UAS-3 My Innovations}\label{uas-3-my-innovations}
 
-Inovasi yang saya kembangkan adalah
+Inovasi yang saya kembangkan adalah \textbf{Continuous Learning Model},
+yaitu sebuah pendekatan pemodelan AI yang dirancang untuk belajar secara
+berkelanjutan selama digunakan, bukan hanya pada tahap awal
+pengembangan. Dalam pendekatan ini, proses pembelajaran tidak dipisahkan
+ke dalam fase training dan deployment yang kaku, melainkan berlangsung
+secara terus-menerus seiring interaksi model dengan lingkungannya.
+Dengan demikian, kemampuan model berkembang secara bertahap berdasarkan
+pengalaman nyata, bukan semata-mata dari kumpulan data historis yang
+besar.
+
+Continuous Learning Model ini dibangun di atas beberapa komponen inti
+yang saling melengkapi, yaitu sistem memori berlapis, pembelajaran
+berbasis penguatan, mekanisme imajinasi, dan penjadwalan tugas.
+
+\section{Memori N-Tier}\label{memori-n-tier}
+
+Memori N-Tier merupakan mekanisme yang membagi memori model ke dalam
+beberapa tingkatan (tier), di mana setiap tier merepresentasikan tingkat
+kejelasan (clarity) dan stabilitas pengetahuan yang berbeda. Konsep ini
+terinspirasi dari cara manusia membedakan antara pemikiran aktif,
+pengalaman jangka pendek, dan intuisi dasar.
+
+Tier dengan tingkat tertinggi berfungsi sebagai working memory, yaitu
+memori dengan clarity paling tinggi yang digunakan secara langsung dalam
+proses penalaran dan pengambilan keputusan. Memori pada tingkat ini
+bersifat sangat dinamis dan mudah berubah, karena ia menangani konteks
+dan informasi sementara.
+
+Sebaliknya, tier memori yang lebih rendah menyimpan pengetahuan yang
+lebih abstrak dan umum, hingga pada tingkat terendah berperan sebagai
+instinct, yaitu pola perilaku dasar dengan clarity rendah namun stabil.
+Tier yang lebih rendah lebih sulit untuk diubah, sehingga berfungsi
+sebagai fondasi perilaku model.
+
+Pembagian ini memungkinkan proses pembelajaran berlangsung secara
+bertahap: pengalaman baru terlebih dahulu memengaruhi memori tingkat
+atas, dan hanya setelah terbukti konsisten dan berguna, ia dapat
+dikonsolidasikan ke tier yang lebih rendah dan lebih stabil.
+
+\section{Reinforcement Learning}\label{reinforcement-learning}
+
+Untuk memungkinkan pembelajaran selama penggunaan, model dirancang
+menggunakan pendekatan reinforcement learning, di mana perilaku model
+dipengaruhi oleh hasil interaksi dengan pengguna. Setiap interaksi
+menghasilkan sinyal umpan balik yang berfungsi sebagai reward atau
+penalty.
+
+Interaksi yang dinilai positif, seperti jawaban yang diterima atau
+digunakan oleh pengguna, akan memperkuat kecenderungan model untuk
+mengulangi pola perilaku tersebut. Sebaliknya, interaksi negatif,
+seperti koreksi atau penolakan, akan melemahkan kecenderungan tersebut.
+Pembelajaran ini tidak dilakukan secara agresif, melainkan secara
+gradual, sehingga menjaga stabilitas sistem.
+
+Pendekatan ini memungkinkan model untuk menyesuaikan perilakunya
+berdasarkan pengalaman nyata, tanpa memerlukan dataset berlabel secara
+eksplisit.
+
+\section{Imagination}\label{imagination}
+
+Komponen Imagination merepresentasikan kemampuan model untuk melakukan
+pemrosesan internal di luar interaksi langsung dengan pengguna. Proses
+ini terjadi ketika model tidak sedang mengerjakan tugas eksplisit dan
+berfungsi sebagai mekanisme refleksi serta pengembangan pengetahuan.
+
+Dalam mode imajinasi, model mengombinasikan informasi yang telah
+dimilikinya untuk: - membentuk hipotesis baru, - mengevaluasi alternatif
+respons, - dan mensimulasikan kemungkinan hasil dari strategi tertentu.
+
+Melalui proses ini, model dapat melakukan eksperimen internal tanpa
+risiko langsung terhadap pengguna, sehingga memungkinkan pengembangan
+pengetahuan dan perilaku secara aman dan terkontrol.
+
+\section{Task Scheduling}\label{task-scheduling}
+
+Berbeda dari model konvensional yang bekerja dalam pola
+request--response instan, Continuous Learning Model menggunakan
+mekanisme task scheduling. Setiap permintaan pengguna dimasukkan ke
+dalam antrian tugas yang dapat diproses secara bertahap seiring waktu.
+
+Pendekatan ini memberikan model ruang untuk melakukan: - perencanaan, -
+penalaran bertahap, - evaluasi ulang terhadap hasil sementara.
+
+Dengan adanya task scheduling, model dapat mengiterasi pekerjaannya
+sendiri, memperbaiki kesalahan, dan meningkatkan kualitas hasil secara
+progresif. Pendekatan ini meniru cara manusia menyelesaikan masalah
+kompleks, di mana pemikiran dan perbaikan tidak selalu terjadi secara
+instan.
 
 \bookmarksetup{startatroot}
 
 \chapter{UAS-4 My Knowledge}\label{uas-4-my-knowledge}
 
-\section{Paradigma Pemrograman}\label{paradigma-pemrograman}
+Pendekatan pembuatan learning model untuk artificial intelligence yang
+paling umum digunakan sekarang adalah pendekatan supervised dan
+unsupervised.
 
-Paradigma pemrograman adalah kerangka konseptual berpikir yang
-mendefinisikan bagaimana seorang programmer memodelkan realitas,
-mengorganisasi logika, dan mengoordinasikan perubahan. Setiap paradigma
-menawarkan jawaban berbeda atas pertanyaan mendasar: apa itu komputasi,
-di mana letak perubahan, dan siapa yang memegang kendali. Tidak ada satu
-paradigma yang unggul secara absolut; masing-masing adalah instrumen
-kognitif yang efektif dalam konteks tertentu.
+\section{Supervised Learning}\label{supervised-learning}
 
-\subsection{Paradigma Imperatif: Komputasi sebagai Urutan
-Aksi}\label{paradigma-imperatif-komputasi-sebagai-urutan-aksi}
+Pada supervised learning, model belajar dari pasangan input--output yang
+telah diberi label. Tujuan utamanya adalah mempelajari fungsi pemetaan
+dari data contoh.
 
-Paradigma imperatif memandang komputasi sebagai serangkaian perintah
-eksplisit yang dieksekusi mesin langkah demi langkah. Dunia dipahami
-sebagai keadaan (state) yang dapat diubah, dan pemrogram bertindak
-sebagai pengendali langsung yang memberi instruksi tentang apa yang
-harus dilakukan selanjutnya.
+Model-model yang menggunakan Supervised Learning
 
-Kekuatan paradigma ini terletak pada:
+\subsection{Linear Models}\label{linear-models}
+
+Digunakan untuk masalah prediksi sederhana.
 
 \begin{itemize}
 \tightlist
 \item
-  kejelasan kontrol,
+  Linear Regression
 \item
-  kedekatan dengan cara kerja mesin,
-\item
-  dan efisiensi operasional.
+  Logistic Regression
 \end{itemize}
 
-Namun, beban kognitifnya tinggi. Tanggung jawab atas konsistensi state
-sepenuhnya berada pada manusia. Kesalahan kecil dalam urutan aksi dapat
-menghasilkan konsekuensi besar. Paradigma ini cocok untuk sistem tingkat
-rendah dan situasi di mana kontrol presisi mutlak diperlukan.
+\subsection{Tree-Based Models}\label{tree-based-models}
 
-\subsection{Paradigma Prosedural: Komputasi sebagai Struktur
-Tertata}\label{paradigma-prosedural-komputasi-sebagai-struktur-tertata}
-
-Paradigma prosedural adalah evolusi dari imperatif yang memperkenalkan
-abstraksi struktural. Program tidak lagi dipahami sebagai aliran
-instruksi mentah, tetapi sebagai kumpulan prosedur atau fungsi yang
-terorganisasi.
-
-Di sini, pemrogram mulai:
+Belajar melalui pemisahan keputusan berbasis fitur.
 
 \begin{itemize}
 \tightlist
 \item
-  memecah kompleksitas,
+  Decision Tree
 \item
-  menamai pola perilaku,
+  Random Forest
 \item
-  dan membangun hierarki logika.
+  Gradient Boosting (XGBoost, LightGBM)
 \end{itemize}
 
-Paradigma ini menandai transisi penting: dari menyuruh mesin ke
-mengorganisasi pikiran. Namun, meskipun struktur meningkat, state global
-masih dominan, sehingga kompleksitas tetap tumbuh seiring skala sistem.
+\subsection{Support Vector Machine
+(SVM)}\label{support-vector-machine-svm}
 
-\subsection{Paradigma Berorientasi Objek: Komputasi sebagai Interaksi
-Entitas}\label{paradigma-berorientasi-objek-komputasi-sebagai-interaksi-entitas}
-
-Paradigma berorientasi objek (OOP) memodelkan dunia sebagai kumpulan
-entitas otonom yang memiliki identitas, keadaan, dan perilaku. Komputasi
-dipahami sebagai hasil dari interaksi antar-objek, bukan sekadar urutan
-instruksi.
-
-Keunggulan utama paradigma ini adalah:
+Mencari batas keputusan optimal antar kelas dengan margin maksimum.
 
 \begin{itemize}
 \tightlist
 \item
-  korespondensi intuitif dengan dunia nyata,
+  Neural Networks (Supervised): Digunakan ketika data dan hubungan antar
+  fitur kompleks.
 \item
-  enkapsulasi kompleksitas,
+  Multilayer Perceptron (MLP)
 \item
-  dan modularitas sistem.
+  Convolutional Neural Network (CNN) untuk visi komputer
+\item
+  Recurrent Neural Network (RNN), LSTM untuk data sekuensial
 \end{itemize}
 
-Namun, OOP membawa risiko konseptual: ketika relasi antar-objek tumbuh
-tanpa disiplin, sistem dapat menjadi rapuh dan sulit dipahami. Paradigma
-ini efektif ketika masalah memang bersifat entitas-sentris, tetapi
-kurang optimal untuk transformasi data murni.
+\section{Unsupervised Learning}\label{unsupervised-learning}
 
-\subsection{Paradigma Fungsional: Komputasi sebagai Transformasi
-Makna}\label{paradigma-fungsional-komputasi-sebagai-transformasi-makna}
+Unsupervised learning bekerja tanpa label eksplisit. Model bertujuan
+menemukan struktur laten atau pola tersembunyi dalam data.
 
-Paradigma fungsional memandang komputasi sebagai transformasi nilai,
-bukan manipulasi keadaan. Fungsi bersifat murni; input yang sama selalu
-menghasilkan output yang sama. State, jika ada, diperlakukan sebagai
-sesuatu yang harus dikendalikan secara ketat atau dieliminasi.
+Model-model yang menggunakan Unsupervised Learning
 
-Paradigma ini memindahkan fokus dari bagaimana mesin bekerja ke apa
-makna komputasi. Dampaknya adalah:
+\subsection{Clustering Models}\label{clustering-models}
+
+Mengelompokkan data berdasarkan kemiripan.
 
 \begin{itemize}
 \tightlist
 \item
-  kemudahan penalaran,
+  K-Means
 \item
-  komposabilitas tinggi,
+  Hierarchical Clustering
 \item
-  dan kesesuaian alami dengan paralelisme.
+  DBSCAN
 \end{itemize}
 
-Paradigma fungsional menuntut kedewasaan berpikir. Ia kurang intuitif
-bagi pemula, tetapi sangat kuat untuk sistem kompleks, konkuren, dan
-berskala besar.
+\subsection{Dimensionality Reduction
+Models}\label{dimensionality-reduction-models}
 
-\subsection{Paradigma Deklaratif: Komputasi sebagai Pernyataan
-Kebenaran}\label{paradigma-deklaratif-komputasi-sebagai-pernyataan-kebenaran}
-
-Paradigma deklaratif membawa abstraksi lebih jauh dengan memisahkan niat
-dari mekanisme. Pemrogram menyatakan apa yang diinginkan, bukan
-bagaimana mencapainya. Mesin bertanggung jawab atas eksekusi.
-
-SQL, logika predikat, dan constraint programming adalah contoh
-manifestasi paradigma ini. Kekuatan utamanya:
+Menyederhanakan representasi data.
 
 \begin{itemize}
 \tightlist
 \item
-  ekspresivitas tinggi,
+  Principal Component Analysis (PCA)
 \item
-  fokus pada makna,
+  t-SNE
 \item
-  dan reduksi kompleksitas operasional.
+  UMAP
 \end{itemize}
 
-Namun, kendali rendah atas proses dapat menjadi keterbatasan ketika
-optimasi spesifik atau perilaku deterministik diperlukan.
+\subsection{Probabilistic Models}\label{probabilistic-models}
 
-\subsection{Sintesis Paradigmatik}\label{sintesis-paradigmatik}
-
-Paradigma pemrograman bukanlah pilihan eksklusif, melainkan repertoar
-konseptual. Seorang programmer yang matang tidak ``menganut'' satu
-paradigma, tetapi memilih dan mengombinasikannya secara sadar sesuai
-dengan sifat masalah.
-
-Dengan demikian, paradigma pemrograman berfungsi sebagai:
+Memodelkan distribusi data.
 
 \begin{itemize}
 \tightlist
 \item
-  konsep induk bagi desain bahasa,
+  Gaussian Mixture Model (GMM)
 \item
-  kerangka kognitif bagi pemecahan masalah,
+  Hidden Markov Model (tanpa label eksplisit)
+\end{itemize}
+
+\subsection{Representation Learning
+Models}\label{representation-learning-models}
+
+Belajar representasi internal data.
+
+\begin{itemize}
+\tightlist
 \item
-  dan alat pemberdayaan manusia dalam mengendalikan kompleksitas
-  komputasional.
+  Autoencoder
+\item
+  Variational Autoencoder (VAE)
 \end{itemize}
 
 \bookmarksetup{startatroot}
@@ -1032,9 +1083,176 @@ Dengan demikian, paradigma pemrograman berfungsi sebagai:
 \chapter{UAS-5 My Professional
 Reviews}\label{uas-5-my-professional-reviews}
 
-Untuk melAkukan review, seperti pada
-\href{../My_Personal_Reviews/Doc.5.Mengevaluasi-Esai-Berdasarkan-Rubrik.pdf}{pendekatan
-AI}, kita membutuhkan rubrik
+\section{Review: My Concepts}\label{review-my-concepts}
+
+Judul Konsep: Learning Model Artificial Intelligence
+
+Analisis: Esai ini mengajukan konsep bahwa AI tidak boleh sekadar
+berbasis aturan atau statis, melainkan harus berupa sistem yang belajar
+dari umpan balik untuk memperbaiki model internalnya secara
+berkelanjutan.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0179}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0072}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.5224}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4526}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Kriteria
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Skor
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Predikat
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Analisis Penilaian
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Clarity & 5 & Excellent & Konsep disajikan dengan sangat jelas. Penulis
+mendefinisikan perbedaan antara AI berbasis aturan (rule-based) dan
+Learning Model dengan bahasa yang tegas dan tidak ambigu. Penjelasan
+mengenai siklus ``informasi -\textgreater{} tindakan -\textgreater{}
+umpan balik'' mudah dipahami. \\
+Logic & 5 & Excellent & Logika yang dibangun sangat koheren. Argumen
+mengalir dari definisi masalah (hasil kurang optimal), solusi
+(penyesuaian model internal), hingga implikasi (hubungan
+manusia-mesin). \\
+Validity & 5 & Excellent & Konsep ini valid dan didukung oleh prinsip
+dasar Machine Learning modern (khususnya Reinforcement Learning). Premis
+bahwa mesin perlu ``ruang untuk mengeksplorasi'' agar bisa beradaptasi
+adalah penalaran yang kuat (sound reasoning). \\
+Usefulness & 5 & Excellent & Konsep ini memiliki kegunaan praktis yang
+signifikan karena menawarkan solusi untuk masalah ketidakpastian dan
+perubahan lingkungan yang tidak bisa ditangani oleh sistem statis. \\
+\end{longtable}
+
+\section{Review: My Opinions}\label{review-my-opinions}
+
+Topik: Keterbatasan LLM dan Kebutuhan Menuju AGI (Artificial General
+Intelligence)
+
+Analisis: Penulis beropini bahwa model LLM saat ini bersifat
+front-loaded (cerdas di awal pelatihan) dan statis, sehingga tidak
+optimal untuk mencapai AGI yang menuntut pembelajaran mandiri (in situ).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0179}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0072}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.5224}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4526}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Kriteria
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Skor
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Predikat
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Analisis Penilaian
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Compelling & 5 & Excellent & Esai ini memikat karena berani mengkritik
+tren populer saat ini (LLM \& Big Data) sebagai pendekatan yang memiliki
+``keterbatasan mendasar'' untuk tujuan jangka panjang AGI. \\
+Informative & 5 & Excellent & Memberikan wawasan mendalam (deep
+insights) mengenai perbedaan fundamental cara belajar manusia
+(eksperimen, kegagalan) dibandingkan dengan cara kerja LLM (inferensi
+statis). \\
+Persuasive & 5 & Excellent & Argumen sangat persuasif dengan menyatakan
+bahwa AGI memerlukan ``pergeseran paradigma'' dari konsumsi data
+historis menuju eksperimen mandiri. Penalaran ini didukung oleh
+perbandingan logis yang kuat. \\
+Engaging & 4 & Good & Esai melibatkan pembaca secara intelektual untuk
+memikirkan ulang definisi ``belajar''. Namun, gaya bahasanya sangat
+teknis dan akademis, mungkin sedikit kurang emosional dibanding esai
+yang bersifat sosial. \\
+\end{longtable}
+
+\section{Review: My Innovations}\label{review-my-innovations}
+
+Inovasi: Continuous Learning Model (Memori N-Tier, Imagination, Task
+Scheduling)
+
+Analisis: Inovasi yang diajukan adalah arsitektur AI yang belajar
+terus-menerus tanpa pemisahan fase training dan deployment, didukung
+oleh fitur memori bertingkat dan kemampuan imajinasi.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0327}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0131}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.9542}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Kriteria
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Skor
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Analisis Penilaian (Berdasarkan Kriteria Dokumen Penilaian)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Kurasi & 4 & Kurasi materi cukup baik dan mencakup algoritma-algoritma
+utama yang menjadi standar industri (seperti XGBoost, CNN, LSTM,
+K-Means). \\
+Kejelasan & 5 & Definisi setiap kategori sangat ringkas dan jelas.
+Contoh: Supervised dijelaskan sebagai ``belajar dari pasangan
+input--output berlabel'' dan Unsupervised sebagai ``menemukan struktur
+laten''. \\
+Akurasi & 5 & Informasi teknis sangat akurat. Pengelompokan algoritma
+sudah tepat (misal: PCA masuk ke Dimensionality Reduction, Random Forest
+masuk ke Tree-Based). \\
+Daya Guna & 4 & Berguna sebagai referensi cepat (cheat sheet) atau peta
+konsep bagi pembelajar AI. Namun, karena sifatnya yang berupa daftar
+(list), kedalaman analisis per poinnya terbatas. \\
+\end{longtable}
+
+\section{Review: My Knowledge}\label{review-my-knowledge}
+
+Topik: Supervised vs Unsupervised Learning Models
+
+Analisis: Dokumen ini merupakan kurasi pengetahuan teknis yang memetakan
+algoritma pembelajaran mesin ke dalam kategori Supervised (Linear, Tree,
+SVM, Neural Network) dan Unsupervised (Clustering, Dim-Reduction,
+Probabilistic).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0327}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.0131}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.9542}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Kriteria
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Skor
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Analisis Penilaian (Berdasarkan Kriteria Dokumen Penilaian)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Kurasi & 4 & Kurasi materi cukup baik dan mencakup algoritma-algoritma
+utama yang menjadi standar industri (seperti XGBoost, CNN, LSTM,
+K-Means). \\
+Kejelasan & 5 & Definisi setiap kategori sangat ringkas dan jelas.
+Contoh: Supervised dijelaskan sebagai ``belajar dari pasangan
+input--output berlabel'' dan Unsupervised sebagai ``menemukan struktur
+laten''. \\
+Akurasi & 5 & Informasi teknis sangat akurat. Pengelompokan algoritma
+sudah tepat (misal: PCA masuk ke Dimensionality Reduction, Random Forest
+masuk ke Tree-Based). \\
+Daya Guna & 4 & Berguna sebagai referensi cepat (cheat sheet) atau peta
+konsep bagi pembelajar AI. Namun, karena sifatnya yang berupa daftar
+(list), kedalaman analisis per poinnya terbatas. \\
+\end{longtable}
 
 \bookmarksetup{startatroot}
 
