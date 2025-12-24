@@ -1,7 +1,5 @@
 # Selamat Berjumpa {.unnumbered}
 
-![About Me](images/AZRL.png){width=950%}
-
 Nama saya adalah Arlow Emmanuel Hergara. Orang biasa yang sedang mengeksplorasi hidup dan semua intrikasi-intraksinya sembari mengembangkan diri menjadi versi yang terbaik.
 
 Saya memiliki ketertarikan dalam pemrograman terutama dalam game development. Karena itu saya masuk ke dalam Sekolah Teknik Elektro dan Informatika sebagai mahasiswa S1 Teknik Informatika. Sekarang, saya sudah berada dalam semester 5.
