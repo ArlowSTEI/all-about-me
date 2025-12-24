@@ -1,75 +1,62 @@
 ## UAS-4 My Knowledge
 
-## Paradigma Pemrograman
+Pendekatan pembuatan learning model untuk artificial intelligence yang paling umum digunakan sekarang adalah pendekatan supervised dan unsupervised.
 
-Paradigma pemrograman adalah kerangka konseptual berpikir yang mendefinisikan bagaimana seorang programmer memodelkan realitas, mengorganisasi logika, dan mengoordinasikan perubahan. Setiap paradigma menawarkan jawaban berbeda atas pertanyaan mendasar: apa itu komputasi, di mana letak perubahan, dan siapa yang memegang kendali. Tidak ada satu paradigma yang unggul secara absolut; masing-masing adalah instrumen kognitif yang efektif dalam konteks tertentu.
+## Supervised Learning
 
-### Paradigma Imperatif: Komputasi sebagai Urutan Aksi
+Pada supervised learning, model belajar dari pasangan input–output yang telah diberi label. Tujuan utamanya adalah mempelajari fungsi pemetaan dari data contoh.
 
-Paradigma imperatif memandang komputasi sebagai serangkaian perintah eksplisit yang dieksekusi mesin langkah demi langkah. Dunia dipahami sebagai keadaan (state) yang dapat diubah, dan pemrogram bertindak sebagai pengendali langsung yang memberi instruksi tentang apa yang harus dilakukan selanjutnya.
+Model-model yang menggunakan Supervised Learning
 
-Kekuatan paradigma ini terletak pada:
+### Linear Models
+Digunakan untuk masalah prediksi sederhana.
 
-- kejelasan kontrol,
-- kedekatan dengan cara kerja mesin,
-- dan efisiensi operasional.
+- Linear Regression
+- Logistic Regression
 
-Namun, beban kognitifnya tinggi. Tanggung jawab atas konsistensi state sepenuhnya berada pada manusia. Kesalahan kecil dalam urutan aksi dapat menghasilkan konsekuensi besar. Paradigma ini cocok untuk sistem tingkat rendah dan situasi di mana kontrol presisi mutlak diperlukan.
+### Tree-Based Models
+Belajar melalui pemisahan keputusan berbasis fitur.
 
-### Paradigma Prosedural: Komputasi sebagai Struktur Tertata
+- Decision Tree
+- Random Forest
+- Gradient Boosting (XGBoost, LightGBM)
 
-Paradigma prosedural adalah evolusi dari imperatif yang memperkenalkan abstraksi struktural. Program tidak lagi dipahami sebagai aliran instruksi mentah, tetapi sebagai kumpulan prosedur atau fungsi yang terorganisasi.
+### Support Vector Machine (SVM)
+Mencari batas keputusan optimal antar kelas dengan margin maksimum.
 
-Di sini, pemrogram mulai:
+- Neural Networks (Supervised): Digunakan ketika data dan hubungan antar fitur kompleks.
+- Multilayer Perceptron (MLP)
+- Convolutional Neural Network (CNN) untuk visi komputer
+- Recurrent Neural Network (RNN), LSTM untuk data sekuensial
 
-- memecah kompleksitas,
-- menamai pola perilaku,
-- dan membangun hierarki logika.
+## Unsupervised Learning
 
-Paradigma ini menandai transisi penting: dari menyuruh mesin ke mengorganisasi pikiran. Namun, meskipun struktur meningkat, state global masih dominan, sehingga kompleksitas tetap tumbuh seiring skala sistem.
+Unsupervised learning bekerja tanpa label eksplisit. Model bertujuan menemukan struktur laten atau pola tersembunyi dalam data.
 
-### Paradigma Berorientasi Objek: Komputasi sebagai Interaksi Entitas
+Model-model yang menggunakan Unsupervised Learning
 
-Paradigma berorientasi objek (OOP) memodelkan dunia sebagai kumpulan entitas otonom yang memiliki identitas, keadaan, dan perilaku. Komputasi dipahami sebagai hasil dari interaksi antar-objek, bukan sekadar urutan instruksi.
+### Clustering Models
+Mengelompokkan data berdasarkan kemiripan.
 
-Keunggulan utama paradigma ini adalah:
+- K-Means
+- Hierarchical Clustering
+- DBSCAN
 
-- korespondensi intuitif dengan dunia nyata,
-- enkapsulasi kompleksitas,
-- dan modularitas sistem.
+### Dimensionality Reduction Models
+Menyederhanakan representasi data.
 
-Namun, OOP membawa risiko konseptual: ketika relasi antar-objek tumbuh tanpa disiplin, sistem dapat menjadi rapuh dan sulit dipahami. Paradigma ini efektif ketika masalah memang bersifat entitas-sentris, tetapi kurang optimal untuk transformasi data murni.
+- Principal Component Analysis (PCA)
+- t-SNE
+- UMAP
 
-### Paradigma Fungsional: Komputasi sebagai Transformasi Makna
+### Probabilistic Models
+Memodelkan distribusi data.
 
-Paradigma fungsional memandang komputasi sebagai transformasi nilai, bukan manipulasi keadaan. Fungsi bersifat murni; input yang sama selalu menghasilkan output yang sama. State, jika ada, diperlakukan sebagai sesuatu yang harus dikendalikan secara ketat atau dieliminasi.
+- Gaussian Mixture Model (GMM)
+- Hidden Markov Model (tanpa label eksplisit)
 
-Paradigma ini memindahkan fokus dari bagaimana mesin bekerja ke apa makna komputasi. Dampaknya adalah:
+### Representation Learning Models
+Belajar representasi internal data.
 
-- kemudahan penalaran,
-- komposabilitas tinggi,
-- dan kesesuaian alami dengan paralelisme.
-
-Paradigma fungsional menuntut kedewasaan berpikir. Ia kurang intuitif bagi pemula, tetapi sangat kuat untuk sistem kompleks, konkuren, dan berskala besar.
-
-### Paradigma Deklaratif: Komputasi sebagai Pernyataan Kebenaran
-
-Paradigma deklaratif membawa abstraksi lebih jauh dengan memisahkan niat dari mekanisme. Pemrogram menyatakan apa yang diinginkan, bukan bagaimana mencapainya. Mesin bertanggung jawab atas eksekusi.
-
-SQL, logika predikat, dan constraint programming adalah contoh manifestasi paradigma ini. Kekuatan utamanya:
-
-- ekspresivitas tinggi,
-- fokus pada makna,
-- dan reduksi kompleksitas operasional.
-
-Namun, kendali rendah atas proses dapat menjadi keterbatasan ketika optimasi spesifik atau perilaku deterministik diperlukan.
-
-### Sintesis Paradigmatik
-
-Paradigma pemrograman bukanlah pilihan eksklusif, melainkan repertoar konseptual. Seorang programmer yang matang tidak “menganut” satu paradigma, tetapi memilih dan mengombinasikannya secara sadar sesuai dengan sifat masalah.
-
-Dengan demikian, paradigma pemrograman berfungsi sebagai:
-
-- konsep induk bagi desain bahasa,
-- kerangka kognitif bagi pemecahan masalah,
-- dan alat pemberdayaan manusia dalam mengendalikan kompleksitas komputasional.
+- Autoencoder
+- Variational Autoencoder (VAE)

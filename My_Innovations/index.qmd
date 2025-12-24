@@ -1,3 +1,45 @@
 # UAS-3 My Innovations
 
-Inovasi yang saya kembangkan adalah 
+Inovasi yang saya kembangkan adalah **Continuous Learning Model**, yaitu sebuah pendekatan pemodelan AI yang dirancang untuk belajar secara berkelanjutan selama digunakan, bukan hanya pada tahap awal pengembangan. Dalam pendekatan ini, proses pembelajaran tidak dipisahkan ke dalam fase training dan deployment yang kaku, melainkan berlangsung secara terus-menerus seiring interaksi model dengan lingkungannya. Dengan demikian, kemampuan model berkembang secara bertahap berdasarkan pengalaman nyata, bukan semata-mata dari kumpulan data historis yang besar.
+
+Continuous Learning Model ini dibangun di atas beberapa komponen inti yang saling melengkapi, yaitu sistem memori berlapis, pembelajaran berbasis penguatan, mekanisme imajinasi, dan penjadwalan tugas.
+
+## Memori N-Tier
+
+Memori N-Tier merupakan mekanisme yang membagi memori model ke dalam beberapa tingkatan (tier), di mana setiap tier merepresentasikan tingkat kejelasan (clarity) dan stabilitas pengetahuan yang berbeda. Konsep ini terinspirasi dari cara manusia membedakan antara pemikiran aktif, pengalaman jangka pendek, dan intuisi dasar.
+
+Tier dengan tingkat tertinggi berfungsi sebagai working memory, yaitu memori dengan clarity paling tinggi yang digunakan secara langsung dalam proses penalaran dan pengambilan keputusan. Memori pada tingkat ini bersifat sangat dinamis dan mudah berubah, karena ia menangani konteks dan informasi sementara.
+
+Sebaliknya, tier memori yang lebih rendah menyimpan pengetahuan yang lebih abstrak dan umum, hingga pada tingkat terendah berperan sebagai instinct, yaitu pola perilaku dasar dengan clarity rendah namun stabil. Tier yang lebih rendah lebih sulit untuk diubah, sehingga berfungsi sebagai fondasi perilaku model.
+
+Pembagian ini memungkinkan proses pembelajaran berlangsung secara bertahap: pengalaman baru terlebih dahulu memengaruhi memori tingkat atas, dan hanya setelah terbukti konsisten dan berguna, ia dapat dikonsolidasikan ke tier yang lebih rendah dan lebih stabil.
+
+## Reinforcement Learning
+
+Untuk memungkinkan pembelajaran selama penggunaan, model dirancang menggunakan pendekatan reinforcement learning, di mana perilaku model dipengaruhi oleh hasil interaksi dengan pengguna. Setiap interaksi menghasilkan sinyal umpan balik yang berfungsi sebagai reward atau penalty.
+
+Interaksi yang dinilai positif, seperti jawaban yang diterima atau digunakan oleh pengguna, akan memperkuat kecenderungan model untuk mengulangi pola perilaku tersebut. Sebaliknya, interaksi negatif, seperti koreksi atau penolakan, akan melemahkan kecenderungan tersebut. Pembelajaran ini tidak dilakukan secara agresif, melainkan secara gradual, sehingga menjaga stabilitas sistem.
+
+Pendekatan ini memungkinkan model untuk menyesuaikan perilakunya berdasarkan pengalaman nyata, tanpa memerlukan dataset berlabel secara eksplisit.
+
+## Imagination
+
+Komponen Imagination merepresentasikan kemampuan model untuk melakukan pemrosesan internal di luar interaksi langsung dengan pengguna. Proses ini terjadi ketika model tidak sedang mengerjakan tugas eksplisit dan berfungsi sebagai mekanisme refleksi serta pengembangan pengetahuan.
+
+Dalam mode imajinasi, model mengombinasikan informasi yang telah dimilikinya untuk:
+- membentuk hipotesis baru,
+- mengevaluasi alternatif respons,
+- dan mensimulasikan kemungkinan hasil dari strategi tertentu.
+
+Melalui proses ini, model dapat melakukan eksperimen internal tanpa risiko langsung terhadap pengguna, sehingga memungkinkan pengembangan pengetahuan dan perilaku secara aman dan terkontrol.
+
+## Task Scheduling
+
+Berbeda dari model konvensional yang bekerja dalam pola request–response instan, Continuous Learning Model menggunakan mekanisme task scheduling. Setiap permintaan pengguna dimasukkan ke dalam antrian tugas yang dapat diproses secara bertahap seiring waktu.
+
+Pendekatan ini memberikan model ruang untuk melakukan:
+- perencanaan,
+- penalaran bertahap,
+- evaluasi ulang terhadap hasil sementara.
+
+Dengan adanya task scheduling, model dapat mengiterasi pekerjaannya sendiri, memperbaiki kesalahan, dan meningkatkan kualitas hasil secara progresif. Pendekatan ini meniru cara manusia menyelesaikan masalah kompleks, di mana pemikiran dan perbaikan tidak selalu terjadi secara instan.

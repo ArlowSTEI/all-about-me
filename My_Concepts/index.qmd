@@ -1,15 +1,8 @@
 # UAS-1 My Concepts
-## Computational Thinking
-Konsep yang ingin saya bawa adalah computational thinking. 
+Konsep yang ingin saya bawa adalah Learning Model Artificial Intelligence (AI). Konsep ini memandang kecerdasan buatan sebagai sistem yang tidak hanya menjalankan instruksi tetap, tetapi mampu belajar dari pengalaman dan memperbaiki perilakunya seiring waktu.
 
-Computational thinking adalah suatu pola pikir yang mampu membantu seseorang menyelesaikan suatu masalah dengan cara yang jelas, terstruktur, dan konsisten. Sebagai programmer, pola pikir ini menjadi hal yang penting karena membantu menghasilkan solusi yang mampu diimplementasikan ke dalam bentuk kode yang dapat dijalankan oleh suatu komputer.
+Berbeda dengan sistem AI yang sepenuhnya berbasis aturan, Learning Model AI memiliki kemampuan untuk mengevaluasi hasil tindakannya sendiri. Ketika sebuah tindakan menghasilkan hasil yang kurang optimal, sistem dapat menyesuaikan model internalnya agar di masa depan dapat membuat keputusan yang lebih baik. Dengan cara ini, kecerdasan tidak berhenti pada desain awal, melainkan berkembang melalui proses pembelajaran berkelanjutan.
 
-Pola pikir computational thinking terdiri dari 4 fondasi:
+Learning Model AI bekerja melalui siklus sederhana namun berulang. Sistem menerima informasi dari lingkungan, mengambil tindakan berdasarkan pengetahuan yang dimilikinya, lalu menerima umpan balik atas tindakan tersebut. Umpan balik ini menjadi dasar bagi sistem untuk memperbarui cara kerjanya. Proses inilah yang memungkinkan AI beradaptasi terhadap perubahan dan ketidakpastian.
 
-1. **Decomposition:** Proses memecah suatu masalah menjadi masalah-masalah yang lebih kecil dan lebih mudah untuk diselesaikan.
-
-2. **Abstraction:** Proses menghilangkangkan detail-detail tidak penting dalam suatu masalah agar dapat fokus pada inti permasalahan.
-
-3. **Pattern Recognition:** Proses menemukan suatu pola dalam permasalahan yang ingin diselesaikan.
-
-4. **Algorithmic Thinking:** Proses menentukan suatu algoritma atau langkah-langkah yang diperlukan untuk menyelesaikan masalah.
+Konsep ini juga mengubah hubungan antara manusia dan mesin. Manusia tidak lagi harus menentukan setiap langkah yang harus diambil oleh sistem, melainkan menetapkan tujuan, batasan, dan kriteria keberhasilan. Mesin diberi ruang untuk mengeksplorasi solusi di dalam kerangka tersebut dan belajar dari hasil yang diperoleh.
