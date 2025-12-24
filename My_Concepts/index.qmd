@@ -1,6 +1,15 @@
 # UAS-1 My Concepts
-Mau hidup epik ? [Write your Life Story](lifestory.pdf)
+## Computational Thinking
+Konsep yang ingin saya bawa adalah computational thinking. 
 
-Apa itu berkonsep? 
+Computational thinking adalah suatu pola pikir yang mampu membantu seseorang menyelesaikan suatu masalah dengan cara yang jelas, terstruktur, dan konsisten. Sebagai programmer, pola pikir ini menjadi hal yang penting karena membantu menghasilkan solusi yang mampu diimplementasikan ke dalam bentuk kode yang dapat dijalankan oleh suatu komputer.
 
-{{< video https://youtu.be/QVfUlVBO80U?si=yM6q_rwV9rcDBbu7>}}
+Pola pikir computational thinking terdiri dari 4 fondasi:
+
+1. **Decomposition:** Proses memecah suatu masalah menjadi masalah-masalah yang lebih kecil dan lebih mudah untuk diselesaikan.
+
+2. **Abstraction:** Proses menghilangkangkan detail-detail tidak penting dalam suatu masalah agar dapat fokus pada inti permasalahan.
+
+3. **Pattern Recognition:** Proses menemukan suatu pola dalam permasalahan yang ingin diselesaikan.
+
+4. **Algorithmic Thinking:** Proses menentukan suatu algoritma atau langkah-langkah yang diperlukan untuk menyelesaikan masalah.

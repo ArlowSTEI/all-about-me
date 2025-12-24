@@ -1,0 +1,1057 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Arlow Emmanuel Hergara},
+  pdfauthor={13523161 Arlow Emmanuel Hergara},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Arlow Emmanuel Hergara}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Portfolio Asesmen II-2100 KIPP}
+\author{13523161 Arlow Emmanuel Hergara}
+\date{2025-10-31}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Selamat Berjumpa}\label{selamat-berjumpa}
+\addcontentsline{toc}{chapter}{Selamat Berjumpa}
+
+\markboth{Selamat Berjumpa}{Selamat Berjumpa}
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=9.5\linewidth,height=\textheight,keepaspectratio]{images/AZRL.png}
+
+}
+
+\caption{About Me}
+
+\end{figure}%
+
+Nama saya adalah Arlow Emmanuel Hergara. Orang biasa yang sedang
+mengeksplorasi hidup dan semua intrikasi-intraksinya sembari
+mengembangkan diri menjadi versi yang terbaik.
+
+Saya memiliki ketertarikan dalam pemrograman terutama dalam game
+development. Karena itu saya masuk ke dalam Sekolah Teknik Elektro dan
+Informatika sebagai mahasiswa S1 Teknik Informatika. Sekarang, saya
+sudah berada dalam semester 5.
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-1 All About Me}\label{uts-1-all-about-me}
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=9.5\linewidth,height=\textheight,keepaspectratio]{All_About_me/../images/AZRL.png}
+
+}
+
+\caption{About Me}
+
+\end{figure}%
+
+\section{Memahami Manusia}\label{memahami-manusia}
+
+Tidak ada dari kita yang lahir mengetahui semuanya. Bahkan, kita masuk
+ke dunia ini tanpa mengetahui apa-apa. Kita bertahan hidup hanya melalui
+naluri dasar yang mendorong kita untuk melakukan aksi tertentu. Aksi
+tersebut pun hanya dapat meminta bantuan dari manusia-manusia lain di
+sekitar kita. Pada awalnya, semua manusia lahir tidak berdaya.
+
+Namun, manusia adalah mahkluk yang terus belajar. Sejak awal kita lahir,
+kita selalu mengobservasi dunia di sekitar kita. Kita mempelajari
+bagaimana dunia itu bekerja. Kita juga coba berinteraksi dengan dunia
+dan melihat bagaimana responnya. Dari yang kita amati kita dapatkan
+pengetahuan dan dari yang kita lakukan kita dapatkan pengalaman.
+
+Dalam mengeksplorasi dunia ini, kita menemukan bahwa dunia yang kita
+alami berbeda antara satu orang dengan orang lain. Kita semua hidup
+dalam dunia yang sama, tetapi dunia itu menunjukkan muka yang berbeda
+pada masing-masing individu. Dengan demikian kita belajar hal-hal
+berbeda, membangun pengetahun dan pengalaman masing-masing, dan menjadi
+pribadi-pribadi yang unik. Tanpa menjalani keseluruhan hidup orang lain,
+tidak mungkin kita memahami orang tersebut.
+
+\section{Memahami Kesalahan}\label{memahami-kesalahan}
+
+Dalam dunia ini, seringkali kita dengar kabar mengenai kesalahan yang
+dilakukan oleh orang-orang. Terkadang, kita sendiri merasakan langsung
+dampak dari kesalahan yang dilakukan oleh orang lain. Kesalahan ini
+dapat menyakiti kita, bahkan hingga mendalam. Karena demikian, kita
+dapat menanggap bahwa orang-orang tersebut merupakan orang yang buruk
+dan memang berusaha untuk menyakiti kita.
+
+Walaupun demikian, tidak ada orang di dunia ini yang secara aktif
+berusaha menjadi pribadi yang buruk. Pribadi manusia tidak bisa
+dilepaskan dari keadaan lingkungannya. Setiap orang berusaha melakukan
+yang terbaik dengan semua informasi dan pengalaman yang dimilikinya.
+Sayang saja, pilihan yang dibuat berdasarkan informasi dan pengalaman
+yang diperoleh dalam suatu lingkungan belum tentu tepat dalam lingkungan
+yang lain. Hal tersebut menggambarkan salah satu kejahatan utama dunia
+ini. Manusia dipaksa membuat pilihan berdasarkan pengetahuan yang tidak
+lengkap dan pilihan ini melekat menjadi pribadi barunya.
+
+\section{Memahami Diri Sendiri}\label{memahami-diri-sendiri}
+
+Pada dua subbab sebelumnya, saya sudah menggambarkan pandangan saya
+terhadap dunia ini, khususnya pada sifat manusia. Namun, pandangan
+tersebut hanya bagian kecil dari apa yang membuat diri saya. Agar dapat
+mengenal saya dengan lebih lengkap, kita harus membahas detail-detail
+yang lebih di permukaan dan mungkin kurang menarik mengenai saya. Untuk
+menjelaskan hal tersebut, biarkan saya menggunakan nada yang lebih
+kasual.
+
+Halo, aku Arlow Emmanuel Hergara, orang yang biasa-biasa saja. Aku
+adalah mahasiswa S1 Teknik Informatika di STEI ITB. Hobi-hobiku adalah
+main game, makan, dan tidur. Selain dari hobi, aku juga memiliki minat
+di bidang game development, software development, dan low level
+programming. Aku juga memiliki kepribadian yang cukup unik (menurut
+saya) dibandingkan dengan orang lain.
+
+Aku adalah angkatan 2023 dari jurusan S1 Teknik Informatika di STEI ITB.
+Saya masuk karena ketertarikan saya dengan programming. Dari sejak kecil
+saya dipaparkan pada programming oleh ayahku dan hingga sekarang aku
+masih tertarik pada hal-hal yang bisa saya buat. Namun jika aku perlu
+jujur, aku merasa ketertarikan tersebut sudah tidak sekuat dulu semenjak
+masuk ITB. Sepertinya tugas tidak berakhir yang aku kerjakan setiap hari
+membuatku agak malas. Namun, aku tetap ingin semangat belajar mengenai
+programming apapun \emph{challenge}-nya.
+
+Hobi-hobiku (main game, makan, dan tidur) memang merupakan hobi yang
+dimiliki banyak orang lain. Ketiga hal itu sering saya lakukan untuk
+menghilangkan stres dari kesulitan sehari-hari (terkadang dilakuin
+terlalu banyak sih). Jika harus spesifik, game yang aku banyak main
+adalah game gacha, khususnya Genshin Impact dan game rhythm khususnya
+osu! (ayo main bareng kalau ada yang main juga). Untuk makan, aku bisa
+makan apa aja dan untuk tidur ya tidur.
+
+Minat pertama yang aku dapatkan adalah game development. Bahkan game
+development adalah hal yang membuat aku tertarik dengan programming. Aku
+menjadi tertarik juga dalam software development setelah berusaha untuk
+membuat program-program berhubungan dengan game development yang bukan
+game. Minat aku terhadap low level programming muncul terakhir ketika
+mencoba melakukan hal yang membutuhkannya. Dalam semua hal yang aku
+minati, aku tertarik dengan bagaimana aku dapat membuat suatu sistem
+bekerja seperti yang aku ingini.
+
+Aku mengatakan bahwa kepribadianku unik tetapi aku tidak tahu seberapa
+benar pernyataan itu. aku cenderung introvert yang tidak dapat
+berinteraksi dengan siapa saja. Namun untuk orang yang aku kenal, aku
+lumayan sering bercanda dan ngobrol. Aku juga seringkali melakukan
+hal-hal yang tidak jelas yang orang lain dapat saja menganggap
+mengesalkan. Sebelumnya aku sering takut melakukan hal-hal seperti itu
+tapi seiringnya waktu aku belajar untuk tidak memikirkannya karena orang
+pada umumnya tidak memerhatikan begitu banyak. Aku dulu orang yang suka
+sedih, tetapi sekarang aku lagi berusaha menjadi seseorang yang lebih
+ceria.
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-2 My Songs for You}\label{uts-2-my-songs-for-you}
+
+\section{Musik yang Sedang Aku
+Dengarkan}\label{musik-yang-sedang-aku-dengarkan}
+
+\url{https://youtu.be/wWN7CaIQ2FU?si=lUU3BOX8Q6DYtetG}
+
+\url{https://youtu.be/IZwVq37cOBk?si=cwOuogIIZ-2hfp7e}
+
+\url{https://youtu.be/xPHjhcTK7gg?si=N-5LYuTnGL1Ehedq}
+
+\section{Musik yang Aku Dengarkan Sejak
+Lama}\label{musik-yang-aku-dengarkan-sejak-lama}
+
+\url{https://youtu.be/pV1GoNi5mFs?si=CM5eZf3NFwQC1YW7}
+
+\url{https://youtu.be/JprsKeAStcw?si=gu91EvJkcwhrBFEp}
+
+\url{https://youtu.be/mpsDywA3wNI?si=ACt0uhPof_Js0E5I}
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-3 My Stories for You}\label{uts-3-my-stories-for-you}
+
+\url{https://youtu.be/cn2hSXelQ0M?si=-xoBlNBDeCbjWpUF} Kisah ini
+kebetulan saya temukan dalam bentuk MV sebuah musik. Namun saya tetap
+menyukai kisah pengorbanan yang diceritakan dalamnya.
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-4 My SHAPE (Spiritual Gifts, Heart, Abilities, Personality,
+Experiences)}\label{uts-4-my-shape-spiritual-gifts-heart-abilities-personality-experiences}
+
+\section{SHAPE}\label{shape}
+
+\subsection{S --- Spiritual Gifts (Karunia
+Rohani)}\label{s-spiritual-gifts-karunia-rohani}
+
+\textbf{Karunia utama}: Wisdom (hikmat) dan Teaching (mengajar) ---
+kemampuan memahami struktur atau prinsip di balik suatu sistem, lalu
+menerangkannya dengan logis agar orang lain mengerti dan bisa
+menerapkannya.
+
+\textbf{Kecenderungan alami}: suka merancang sistem atau konsep baru
+(terutama lewat pemrograman dan desain logika), menemukan keteraturan
+dari sesuatu yang rumit, serta menyalurkan wawasan itu lewat penjelasan
+atau alat bantu (program, tulisan, atau diagram).
+
+\textbf{Tanda-tanda karunia terlihat}:
+
+\begin{itemize}
+\tightlist
+\item
+  Orang lain sering meminta bantuanku untuk menjelaskan hal teknis atau
+  memecahkan masalah logika.
+\item
+  Aku menikmati proses ``merancang cara berpikir'' --- bukan hanya hasil
+  akhirnya.
+\item
+  Saat ideku berhasil membuat orang lain paham, aku merasa puas dan
+  berarti.
+\end{itemize}
+
+\subsection{H --- Heart (Minat, Nilai, dan
+Panggilan)}\label{h-heart-minat-nilai-dan-panggilan}
+
+\textbf{Bidang yang dicintai}: teknologi, game, dan sistem berpikir yang
+membuka kemungkinan baru. Nilai utama: eksplorasi, kebebasan berpikir,
+dan membantu orang menemukan arah hidupnya.
+
+\textbf{Panggilan pribadi}: menggunakan teknologi dan media interaktif
+(seperti game) untuk memperluas cara orang belajar, berefleksi, dan
+menemukan makna hidup.
+
+\textbf{Masalah yang ingin diperbaiki}: banyak orang tersesat dalam
+rutinitas tanpa arah, mereka butuh media yang menghidupkan kembali rasa
+ingin tahu dan tujuan.
+
+\textbf{Makna dalam karya}: ketika sebuah ide atau sistem yang saya buat
+bisa memperluas kemungkinan, menyalakan rasa ingin tahu, dan memberi
+jalan keluar bagi orang yang kehilangan arah.
+
+\subsection{A --- Abilities (Kemampuan
+Andal)}\label{a-abilities-kemampuan-andal}
+
+\textbf{Kemampuan utama}:
+
+\begin{itemize}
+\tightlist
+\item
+  Pemrograman dalam berbagai bahasa dan paradigma (imperatif,
+  fungsional, logika).
+\item
+  Desain sistem dan arsitektur perangkat lunak.
+\item
+  Debugging dan analisis kesalahan kompleks secara sistematis.
+\item
+  Koordinasi proyek dan pembagian tugas berbasis kemampuan tim.
+\end{itemize}
+
+\textbf{Gaya berpikir}: analitis dan terstruktur, mampu melihat
+keterhubungan antarbagian dan mengoptimalkan sistem agar efisien dan
+mudah dikembangkan.
+
+\textbf{Kekuatan khas}: menyatukan konsep dari berbagai disiplin
+(teknologi, logika, desain) menjadi satu sistem kerja yang elegan.
+
+\textbf{Peran alami dalam tim}: desainer sistem dan penjaga kualitas,
+orang yang memastikan proyek tetap konsisten dengan visi teknis dan
+logika internalnya.
+
+\subsection{P --- Personality (Kepribadian dan Gaya
+Kerja)}\label{p-personality-kepribadian-dan-gaya-kerja}
+
+\textbf{Gaya kerja}: fleksibel antara kerja mandiri dan kolaboratif,
+mampu fokus mendalam saat dibutuhkan, tetapi juga siap berdiskusi untuk
+mencari solusi yang paling rasional.
+
+\textbf{Pola pengambilan keputusan}: berbasis logika dan prinsip, bukan
+emosi sesaat. Sering memprioritaskan solusi ideal jangka panjang walau
+memerlukan lebih banyak waktu dan energi.
+
+\textbf{Kecenderungan khas}: perfeksionis terhadap sistem dan ide, ingin
+setiap komponen memiliki alasan dan keterhubungan yang jelas.
+
+\textbf{Sikap terhadap konflik}: tegas dan langsung menyampaikan
+pendapat, terutama bila ada hal yang melanggar prinsip logika atau
+efisiensi.
+
+\textbf{Peran alami}: penalar strategis dan penjaga arah, memastikan
+keputusan tidak sekadar cepat, tapi juga benar dalam jangka panjang.
+
+\subsection{Experience (Pengalaman
+Hidup)}\label{experience-pengalaman-hidup}
+
+\textbf{Pengalaman pembentuk utama}: tantangan besar saat mencoba
+membangun sistem operasi sendiri --- sebuah proyek yang menuntut
+pemahaman mendalam tentang cara kerja komputer dari level paling dasar.
+
+\textbf{Pelajaran dari kegagalan}: meski proyek itu belum berhasil,
+pengalaman tersebut membentuk pola pikir sistematis dan menghargai
+pentingnya fondasi yang kokoh dalam setiap rancangan. Kegagalan itu
+menjadi pengingat bahwa visi besar membutuhkan kesabaran, disiplin, dan
+kesediaan untuk memahami detail kecil sebelum membangun sesuatu yang
+kompleks.
+
+\textbf{Makna pribadi}: dari proses itu lahir tekad untuk terus memahami
+bagaimana teknologi bekerja dari dalam, bukan sekadar menggunakannya.
+Walau belum menemukan momen ``inilah panggilan saya,'' perjalanan
+eksplorasi itu sendiri menjadi cara Anda mencari makna.
+
+\section{Piagam Diri --- Arlow Emmanuel
+Hergara}\label{piagam-diri-arlow-emmanuel-hergara}
+
+\subsection{Misi Hidup (Life Mission)}\label{misi-hidup-life-mission}
+
+Menjadi seseorang yang memajukan teknologi agar manusia dapat melakukan
+hal-hal yang sebelumnya mustahil dilakukan --- menciptakan sistem yang
+memperluas potensi, bukan membatasi.
+
+\subsection{Nilai Inti (Core Values)}\label{nilai-inti-core-values}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Rasionalitas dan kejujuran intelektual.
+\item
+  Empati --- kemajuan tidak boleh mengorbankan kesejahteraan orang lain.
+\item
+  Keberlanjutan --- setiap sistem harus dibangun agar tetap bermanfaat
+  dan tidak merusak keseimbangan.
+\end{enumerate}
+
+\subsection{Prinsip Keputusan (Decision
+Compass)}\label{prinsip-keputusan-decision-compass}
+
+Saya akan menilai setiap tindakan dengan dua pertanyaan:
+
+\begin{itemize}
+\tightlist
+\item
+  Apakah ini masuk akal dan benar secara sistemik?
+\item
+  Apakah ini adil dan tidak memaksa orang untuk memberi lebih dari yang
+  mereka miliki?
+\end{itemize}
+
+Jika suatu keputusan tidak lulus kedua pertanyaan ini, maka arah itu
+bukan untuk saya.
+
+\subsection{Peran Utama (Primary Role)}\label{peran-utama-primary-role}
+
+Arsitek sistem dan penalar strategis --- seseorang yang merancang
+fondasi logika dan teknologi agar orang lain dapat membangun di atasnya
+dengan aman dan efisien.
+
+\subsection{Gaya Pelayanan (Service
+Style)}\label{gaya-pelayanan-service-style}
+
+Mengajar dan membimbing melalui logika, menjelaskan hal sulit dengan
+cara yang dapat dipahami, serta menciptakan alat yang membantu orang
+lain memahami dunia mereka.
+
+\subsection{Janji Hidup (Life Promise)}\label{janji-hidup-life-promise}
+
+Saya berjanji untuk terus belajar, memahami dasar setiap hal, dan
+menggunakan pemahaman itu untuk menciptakan teknologi yang memperluas
+kebebasan manusia, bukan mempersempitnya.
+
+\subsection{Batas Etis (Ethical
+Boundaries)}\label{batas-etis-ethical-boundaries}
+
+Saya tidak akan membuat sistem yang memaksa, mengeksploitasi, atau
+menekan manusia demi efisiensi atau keuntungan. Teknologi harus melayani
+manusia --- bukan sebaliknya.
+
+\subsection{Narasi Diri (90 Detik)}\label{narasi-diri-90-detik}
+
+Saya adalah seseorang yang mencintai logika dan sistem, dengan hasrat
+untuk memahami bagaimana teknologi bekerja dan bagaimana ia dapat
+memperluas kemampuan manusia. Saya menikmati proses merancang,
+memprogram, dan membangun struktur yang tidak hanya efisien tetapi juga
+adil bagi penggunanya. Saya percaya bahwa kemajuan sejati tidak boleh
+memaksa siapa pun mengorbankan lebih dari yang mereka miliki. Pengalaman
+saya mencoba membangun sistem operasi sendiri, meskipun belum berhasil,
+mengajarkan pentingnya fondasi dan kesabaran dalam mewujudkan visi
+besar. Melalui perjalanan ini, saya ingin terus berkontribusi dalam
+pengembangan teknologi yang membantu manusia melakukan hal-hal yang
+sebelumnya tidak mungkin, sambil tetap menjaga nilai-nilai kemanusiaan
+di dalamnya.
+
+\bookmarksetup{startatroot}
+
+\chapter{UTS-5 My Personal Reviews}\label{uts-5-my-personal-reviews}
+
+\section{Identifikasi}\label{identifikasi}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Nama Mahasiswa TUGAS:} Arlow Emmanuel Hergara (berdasarkan
+  konten UTS-1 dan UTS-4)
+\item
+  \textbf{Nama Penilai:} Self-Assessment (Gemini)
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Tinjauan Umum}\label{tinjauan-umum}
+
+Portofolio UTS ini menunjukkan kualitas yang sangat bervariasi. Terdapat
+kekuatan luar biasa dalam refleksi diri dan pemikiran terstruktur
+(ditunjukkan pada UTS-1 dan UTS-4), yang menunjukkan kedalaman pemahaman
+dan orisinalitas.
+
+Namun, TUGAS UTS-2, UTS-3, dan UTS-5 tampaknya salah memahami inti dari
+tugas tersebut. Alih-alih membuat atau menyampaikan ``pesan personal'',
+tugas-tugas tersebut sebagian besar hanya berisi tautan ke karya orang
+lain (UTS-2 \& UTS-3) atau mendelegasikan tugas analisis (UTS-5) ke AI
+tanpa ada kontribusi analitis pribadi.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Tinjauan Spesifik \& Skor
+Persentase}\label{tinjauan-spesifik-skor-persentase}
+
+Berikut adalah penilaian rinci untuk setiap TUGAS:
+
+\subsection{UTS-1: All About Me}\label{uts-1-all-about-me-1}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Tinjauan:} Konten ini luar biasa. Dimulai dengan perenungan
+  filosofis tentang ``Memahami Manusia'' dan ``Memahami Kesalahan''
+  sebelum beralih ke perkenalan diri yang lebih kasual. Pendekatan ini
+  sangat orisinal dan memberikan wawasan mendalam.
+\item
+  \textbf{Penilaian (Rubrik UTS-1):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Orisinalitas (5/5): Sudut pandang sangat unik.
+  \item
+    Keterlibatan (4/5): Umumnya menarik.
+  \item
+    Humor (2/5): Kurang. Nada tulisan cenderung serius.
+  \item
+    Wawasan (Insight) (5/5): Memberi pemahaman mendalam.
+  \end{itemize}
+\item
+  \textbf{Skor Persentase: 16 / 20 (80\%)}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{UTS-2: My Song for You}\label{uts-2-my-song-for-you}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Tinjauan:} Tugas ini meminta ``pesan berbentuk puisi, lago,
+  dan/atau viodeo clip''{[}cite: 17{]}. Konten yang dikumpulkan hanya
+  berupa enam tautan video YouTube tanpa konteks atau pesan pribadi.
+\item
+  \textbf{Penilaian (Rubrik UTS-2):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Orisinalitas (1/5): Klise. Hanya daftar tautan.
+  \item
+    Keterlibatan (1/5): Tidak memikat.
+  \item
+    Humor (1/5): Tidak ada.
+  \item
+    Inspirasi (1/5): Tidak menginspirasi.
+  \end{itemize}
+\item
+  \textbf{Skor Persentase: 4 / 20 (20\%)}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{UTS-3: My Stories for You}\label{uts-3-my-stories-for-you-1}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Tinjauan:} Tugas ini meminta ``kisah inspiratif dan menarik
+  yang Anda ingin bagikan''{[}cite: 18{]}. Konten yang dikumpulkan
+  adalah satu video musik dengan komentar singkat. Penulis tidak
+  membagikan \emph{kisah mereka sendiri}.
+\item
+  \textbf{Penilaian (Rubrik UTS-3):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Orisinalitas (1/5): Tidak ada pengembangan baru.
+  \item
+    Keterlibatan (1/5): Tidak menarik (dari sisi penulis).
+  \item
+    Pengembangan Narasi (1/5): Terputus dari cerita (personal).
+  \item
+    Inspirasi (2/5): Berusaha menginspirasi, namun dangkal.
+  \end{itemize}
+\item
+  \textbf{Skor Persentase: 5 / 20 (25\%)}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{UTS-4: My SHAPE}\label{uts-4-my-shape}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Tinjauan:} Tugas ini meminta ``laporan siapa Anda berdasar
+  hasil sebuah lembar kerja''{[}cite: 20{]}. Konten yang disajikan
+  sangat baik, rinci, dan terstruktur. Penulis mengembangkannya menjadi
+  ``Piagam Diri'' dan ``Narasi Diri''.
+\item
+  \textbf{Penilaian (Rubrik UTS-4):} \emph{(Rubrik di PDF tampaknya
+  salah salin, penilaian ini menginterpretasikan kriteria dalam konteks
+  laporan SHAPE).}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Orisinalitas (5/5): Pengembangan laporan sangat unik.
+  \item
+    Keterlibatan (5/5): Sangat memikat dan terstruktur.
+  \item
+    Pengembangan Narasi (5/5): Logis, dari analisis SHAPE ke Piagam
+    Diri.
+  \item
+    Inspirasi (5/5): Sangat menginspirasi (mis. Misi Hidup, Batas Etis).
+  \end{itemize}
+\item
+  \textbf{Skor Persentase: 20 / 20 (100\%)}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{UTS-5: My Personal
+Reviews}\label{uts-5-my-personal-reviews-1}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Tinjauan:} Tugas ini adalah ``telaahan pesan personal
+  berdasarkan rubrik''{[}cite: 21{]}. Konten yang dikumpulkan
+  \emph{bukanlah} telaahan yang ditulis oleh penulis. Penulis
+  mendokumentasikan proses menggunakan ChatGPT untuk menilai portofolio
+  \emph{orang lain}.
+\item
+  \textbf{Penilaian (Rubrik UTS-5):}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Pemahaman Konsep (1/5): Tidak paham. Tugas didelegasikan.
+  \item
+    Analisis Kritis (1/5): Tidak kritis. Tidak ada analisis pribadi.
+  \item
+    Argumentasi (Logos) (1/5): Tidak logis.
+  \item
+    Etos \& Empati (1/5): Tidak tampak.
+  \item
+    Rekomendasi Perbaikan (1/5): Tidak ada (dari penulis).
+  \end{itemize}
+\item
+  \textbf{Skor Persentase: 5 / 25 (20\%)}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{SKOR (Perhitungan Kontribusi
+CPMK)}\label{skor-perhitungan-kontribusi-cpmk}
+
+Berdasarkan \texttt{Tabel\ 1}, bobot untuk setiap tugas UTS adalah
+sebagai berikut: * \textbf{UTS-1:} Bobot 6 (untuk CPMK-2) *
+\textbf{UTS-2:} Bobot 7 (untuk CPMK-2) * \textbf{UTS-3:} Bobot 7 (untuk
+CPMK-2) * \textbf{UTS-4:} Bobot 6 (untuk CPMK-2) * \textbf{UTS-5:} Bobot
+10 (untuk CPMK-1)
+
+Perhitungan kontribusi:
+\texttt{(Skor\ Persentase\ /\ 100)\ *\ Bobot\ Tugas}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{UTS-1 (CPMK-2):} (80\% / 100) * 6 = \textbf{4.8}
+\item
+  \textbf{UTS-2 (CPMK-2):} (20\% / 100) * 7 = \textbf{1.4}
+\item
+  \textbf{UTS-3 (CPMK-2):} (25\% / 100) * 7 = \textbf{1.75}
+\item
+  \textbf{UTS-4 (CPMK-2):} (100\% / 100) * 6 = \textbf{6.0}
+\item
+  \textbf{UTS-5 (CPMK-1):} (20\% / 100) * 10 = \textbf{2.0}
+\end{itemize}
+
+Tabel ini diisi sesuai format laporan{[}cite: 65{]}:
+
+\begin{longtable}[]{@{}lcccc@{}}
+\toprule\noalign{}
+UTS & CPMK-1 & CPMK-2 & CPMK-3 & CPMK-4 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+UTS-1 & - & 4.8 & - & - \\
+UTS-2 & - & 1.4 & - & - \\
+UTS-3 & - & 1.75 & - & - \\
+UTS-4 & - & 6.0 & - & - \\
+UTS-5 & 2.0 & - & - & - \\
+\textbf{Total Kontribusi} & \textbf{2.0} & \textbf{13.95} & \textbf{0} &
+\textbf{0} \\
+\emph{(Total Bobot UTS)} & \emph{(10)} & \emph{(26)} & \emph{(0)} &
+\emph{(0)} \\
+\end{longtable}
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-1 My Concepts}\label{uas-1-my-concepts}
+
+\section{Computational Thinking}\label{computational-thinking}
+
+Konsep yang ingin saya bawa adalah computational thinking.
+
+Computational thinking adalah suatu pola pikir yang mampu membantu
+seseorang menyelesaikan suatu masalah dengan cara yang jelas,
+terstruktur, dan konsisten. Sebagai programmer, pola pikir ini menjadi
+hal yang penting karena membantu menghasilkan solusi yang mampu
+diimplementasikan ke dalam bentuk kode yang dapat dijalankan oleh suatu
+komputer.
+
+Pola pikir computational thinking terdiri dari 4 fondasi:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Decomposition:} Proses memecah suatu masalah menjadi
+  masalah-masalah yang lebih kecil dan lebih mudah untuk diselesaikan.
+\item
+  \textbf{Abstraction:} Proses menghilangkangkan detail-detail tidak
+  penting dalam suatu masalah agar dapat fokus pada inti permasalahan.
+\item
+  \textbf{Pattern Recognition:} Proses menemukan suatu pola dalam
+  permasalahan yang ingin diselesaikan.
+\item
+  \textbf{Algorithmic Thinking:} Proses menentukan suatu algoritma atau
+  langkah-langkah yang diperlukan untuk menyelesaikan masalah.
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-3 My Opinions}\label{uas-3-my-opinions}
+
+Opini yang saya berikan pada bagian ini adalah opini mengenai penggunaan
+AI dalam pembuatan produk software (terutama dalam kode sumber).
+
+Menurut saya, penggunaan AI perlu dilakukan bersama dengan dekomposisi
+program menjadi komponen-komponen yang jelas serta pendefinisian kontrak
+antar komponen yang sudah benar. Terdapat beberapa keuntungan ketika
+menggunakan pendekatan ini ketika menggunakan AI untuk menulis kode.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Struktur kode yang lebih jelas:} Penentuan komponen-komponen
+  perangkat lunak sebelum penulisan kode implementasi adalah hal yang
+  umum dilakukan dalam pembuatan perangkat lunak. Hal ini dikarenakan
+  penentuan struktur di awal membantu tim untuk membagi kerja secara
+  jelas dan tetap menghasilkan komponen-komponen yang mampu berinteraksi
+  dengan tepat. Untuk sekarang, AI masih belum mampu untuk menghasilkan
+  struktur kode yang terbaik untuk suatu perangkat lunak dan lebih baik
+  agar hal tersebut ditentukan sendiri oleh manusia.
+\item
+  \textbf{Mengurangi kesalahan:} Pendefinisian kontrak-kontrak yang
+  jelas antar komponen memungkinkan pembuatan setiap komponen secara
+  terpisah. Hal ini membantu AI sebab mengurangi hal-hal yang perlu
+  dipikirkan oleh AI ketika menghasilkan suatu kode. Hal ini sama juga
+  untuk developer manusia, tetapi orang cenderung lupa akan hal ini.
+\item
+  \textbf{Penggunaan AI lebih efisien:} Pembagian suatu program menjadi
+  komponen-komponen memecahkan permasalahan keseluruhan program menjadi
+  domain-domain yang lebih kecil. Hal ini dilakukan untuk membantu
+  developer untuk fokus memecahkan masalah yang lebih kecil satu demi
+  satu hingga menghasilkan program keseluruhan yang dapat memecahkan
+  masalah yang lebih besar. AI juga mengambil keuntungan dari domain
+  masalah yang lebih kecil sama seperti developer manusia. Ketika domain
+  masalah lebih kecil, informasi yang harus disimpan oleh AI menjadi
+  lebih sedikit. Hal ini berarti bahwa jumlah token yang digunakan oleh
+  AI akan berkurang sehingga penggunaannya menjadi lebih efisien.
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-3 My Innovations}\label{uas-3-my-innovations}
+
+Inovasi yang saya kembangkan adalah
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-4 My Knowledge}\label{uas-4-my-knowledge}
+
+\section{Paradigma Pemrograman}\label{paradigma-pemrograman}
+
+Paradigma pemrograman adalah kerangka konseptual berpikir yang
+mendefinisikan bagaimana seorang programmer memodelkan realitas,
+mengorganisasi logika, dan mengoordinasikan perubahan. Setiap paradigma
+menawarkan jawaban berbeda atas pertanyaan mendasar: apa itu komputasi,
+di mana letak perubahan, dan siapa yang memegang kendali. Tidak ada satu
+paradigma yang unggul secara absolut; masing-masing adalah instrumen
+kognitif yang efektif dalam konteks tertentu.
+
+\subsection{Paradigma Imperatif: Komputasi sebagai Urutan
+Aksi}\label{paradigma-imperatif-komputasi-sebagai-urutan-aksi}
+
+Paradigma imperatif memandang komputasi sebagai serangkaian perintah
+eksplisit yang dieksekusi mesin langkah demi langkah. Dunia dipahami
+sebagai keadaan (state) yang dapat diubah, dan pemrogram bertindak
+sebagai pengendali langsung yang memberi instruksi tentang apa yang
+harus dilakukan selanjutnya.
+
+Kekuatan paradigma ini terletak pada:
+
+\begin{itemize}
+\tightlist
+\item
+  kejelasan kontrol,
+\item
+  kedekatan dengan cara kerja mesin,
+\item
+  dan efisiensi operasional.
+\end{itemize}
+
+Namun, beban kognitifnya tinggi. Tanggung jawab atas konsistensi state
+sepenuhnya berada pada manusia. Kesalahan kecil dalam urutan aksi dapat
+menghasilkan konsekuensi besar. Paradigma ini cocok untuk sistem tingkat
+rendah dan situasi di mana kontrol presisi mutlak diperlukan.
+
+\subsection{Paradigma Prosedural: Komputasi sebagai Struktur
+Tertata}\label{paradigma-prosedural-komputasi-sebagai-struktur-tertata}
+
+Paradigma prosedural adalah evolusi dari imperatif yang memperkenalkan
+abstraksi struktural. Program tidak lagi dipahami sebagai aliran
+instruksi mentah, tetapi sebagai kumpulan prosedur atau fungsi yang
+terorganisasi.
+
+Di sini, pemrogram mulai:
+
+\begin{itemize}
+\tightlist
+\item
+  memecah kompleksitas,
+\item
+  menamai pola perilaku,
+\item
+  dan membangun hierarki logika.
+\end{itemize}
+
+Paradigma ini menandai transisi penting: dari menyuruh mesin ke
+mengorganisasi pikiran. Namun, meskipun struktur meningkat, state global
+masih dominan, sehingga kompleksitas tetap tumbuh seiring skala sistem.
+
+\subsection{Paradigma Berorientasi Objek: Komputasi sebagai Interaksi
+Entitas}\label{paradigma-berorientasi-objek-komputasi-sebagai-interaksi-entitas}
+
+Paradigma berorientasi objek (OOP) memodelkan dunia sebagai kumpulan
+entitas otonom yang memiliki identitas, keadaan, dan perilaku. Komputasi
+dipahami sebagai hasil dari interaksi antar-objek, bukan sekadar urutan
+instruksi.
+
+Keunggulan utama paradigma ini adalah:
+
+\begin{itemize}
+\tightlist
+\item
+  korespondensi intuitif dengan dunia nyata,
+\item
+  enkapsulasi kompleksitas,
+\item
+  dan modularitas sistem.
+\end{itemize}
+
+Namun, OOP membawa risiko konseptual: ketika relasi antar-objek tumbuh
+tanpa disiplin, sistem dapat menjadi rapuh dan sulit dipahami. Paradigma
+ini efektif ketika masalah memang bersifat entitas-sentris, tetapi
+kurang optimal untuk transformasi data murni.
+
+\subsection{Paradigma Fungsional: Komputasi sebagai Transformasi
+Makna}\label{paradigma-fungsional-komputasi-sebagai-transformasi-makna}
+
+Paradigma fungsional memandang komputasi sebagai transformasi nilai,
+bukan manipulasi keadaan. Fungsi bersifat murni; input yang sama selalu
+menghasilkan output yang sama. State, jika ada, diperlakukan sebagai
+sesuatu yang harus dikendalikan secara ketat atau dieliminasi.
+
+Paradigma ini memindahkan fokus dari bagaimana mesin bekerja ke apa
+makna komputasi. Dampaknya adalah:
+
+\begin{itemize}
+\tightlist
+\item
+  kemudahan penalaran,
+\item
+  komposabilitas tinggi,
+\item
+  dan kesesuaian alami dengan paralelisme.
+\end{itemize}
+
+Paradigma fungsional menuntut kedewasaan berpikir. Ia kurang intuitif
+bagi pemula, tetapi sangat kuat untuk sistem kompleks, konkuren, dan
+berskala besar.
+
+\subsection{Paradigma Deklaratif: Komputasi sebagai Pernyataan
+Kebenaran}\label{paradigma-deklaratif-komputasi-sebagai-pernyataan-kebenaran}
+
+Paradigma deklaratif membawa abstraksi lebih jauh dengan memisahkan niat
+dari mekanisme. Pemrogram menyatakan apa yang diinginkan, bukan
+bagaimana mencapainya. Mesin bertanggung jawab atas eksekusi.
+
+SQL, logika predikat, dan constraint programming adalah contoh
+manifestasi paradigma ini. Kekuatan utamanya:
+
+\begin{itemize}
+\tightlist
+\item
+  ekspresivitas tinggi,
+\item
+  fokus pada makna,
+\item
+  dan reduksi kompleksitas operasional.
+\end{itemize}
+
+Namun, kendali rendah atas proses dapat menjadi keterbatasan ketika
+optimasi spesifik atau perilaku deterministik diperlukan.
+
+\subsection{Sintesis Paradigmatik}\label{sintesis-paradigmatik}
+
+Paradigma pemrograman bukanlah pilihan eksklusif, melainkan repertoar
+konseptual. Seorang programmer yang matang tidak ``menganut'' satu
+paradigma, tetapi memilih dan mengombinasikannya secara sadar sesuai
+dengan sifat masalah.
+
+Dengan demikian, paradigma pemrograman berfungsi sebagai:
+
+\begin{itemize}
+\tightlist
+\item
+  konsep induk bagi desain bahasa,
+\item
+  kerangka kognitif bagi pemecahan masalah,
+\item
+  dan alat pemberdayaan manusia dalam mengendalikan kompleksitas
+  komputasional.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{UAS-5 My Professional
+Reviews}\label{uas-5-my-professional-reviews}
+
+Untuk melAkukan review, seperti pada
+\href{../My_Personal_Reviews/Doc.5.Mengevaluasi-Esai-Berdasarkan-Rubrik.pdf}{pendekatan
+AI}, kita membutuhkan rubrik
+
+\bookmarksetup{startatroot}
+
+\chapter{Summary}\label{summary}
+
+In summary, this book has no content whatsoever.
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\phantomsection\label{refs}
+
+
+
+
+\end{document}
