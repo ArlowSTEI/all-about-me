@@ -46,3 +46,6 @@ Analisis: Dokumen ini merupakan kurasi pengetahuan teknis yang memetakan algorit
 |Kejelasan |5   |Definisi setiap kategori sangat ringkas dan jelas. Contoh: Supervised dijelaskan sebagai "belajar dari pasangan input–output berlabel" dan Unsupervised sebagai "menemukan struktur laten".                                                                                                         |
 |Akurasi   |5   |Informasi teknis sangat akurat. Pengelompokan algoritma sudah tepat (misal: PCA masuk ke Dimensionality Reduction, Random Forest masuk ke Tree-Based).                                                                                                                                              |
 |Daya Guna |4   |Berguna sebagai referensi cepat (cheat sheet) atau peta konsep bagi pembelajar AI. Namun, karena sifatnya yang berupa daftar (list), kedalaman analisis per poinnya terbatas.                                                                                                                       |
+
+## Peer Assessment
+[File Peer Assessment](UAS-5_Skor.xlsx)
